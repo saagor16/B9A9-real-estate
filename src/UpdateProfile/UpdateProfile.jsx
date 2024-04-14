@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 
-const Profile = () => {
+const UpdateProfile = () => {
     const { user, updateProfileInfo } = useContext(AuthContext);
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(false);
@@ -38,6 +38,15 @@ const Profile = () => {
                     />
                 </div>
                 <div>
+                    <label>Your Name:</label>
+                    <input
+                        type="text"
+                        name="name"
+                        defaultValue={user.email}
+                        className="input input-bordered w-full max-w-xs"
+                    />
+                </div>
+                <div>
                     <label>Image URL</label>
                     <input
                         type="text"
@@ -46,7 +55,6 @@ const Profile = () => {
                         className="input input-bordered w-full max-w-xs"
                     />
                 </div>
-                
                 <button type="submit" className="btn btn-secondary px-10" >
                     
                 </button>
@@ -57,4 +65,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default UpdateProfile;
