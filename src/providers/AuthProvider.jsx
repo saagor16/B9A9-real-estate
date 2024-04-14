@@ -49,6 +49,9 @@ const AuthProvider = ({ children }) => {
   const logOut = () => {
     return signOut(auth);
   }
+  const userProfile = () => {
+    return signOut(auth);
+  }
 
   const LogIn = (email, password) =>{
     return signInWithEmailAndPassword(auth, email , password)
@@ -73,6 +76,7 @@ const AuthProvider = ({ children }) => {
     githubLogin,
     LogIn,
     logOut,
+    userProfile,
   };
 
   return (

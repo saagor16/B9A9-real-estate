@@ -7,7 +7,7 @@ const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
   const handleLogOut = () => {
-    logOut().then().catch();
+    logOut();
   };
 
   const navLinks = (
@@ -92,8 +92,8 @@ const Navbar = () => {
         </div>
         <a>
           {" "}
-          <span className="text-lg md:text-2xl lg:text-3xl font-extrabold bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient bg-300%">
-            PropertyPortal
+          <span className="text-lg md:text-2xl lg:text-3xl font-extrabold bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient bg-500%">
+            realProperty
           </span>
         </a>
       </div>
