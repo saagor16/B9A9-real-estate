@@ -1,9 +1,6 @@
 const Card = () => {
   return (
     <div>
-     <div className=" mt-10">
-        <h4 className="text-5xl font-extrabold text-center">card</h4>
-     </div>
      <div>
      <div className="card w-96 bg-base-100 shadow-xl mt-10">
         <figure>

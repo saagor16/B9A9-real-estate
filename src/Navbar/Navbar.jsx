@@ -1,8 +1,13 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const { user, logOut } = useContext(AuthContext);
 
@@ -34,37 +39,44 @@ const Navbar = () => {
           About Us
         </NavLink>
       </li>
-      {
-        user ? <li>
-        <NavLink
-          to="/profile"
-          style={({ isActive }) => ({
-            color: isActive ? "#fff" : "",
-            background: isActive ? "#7600dc" : "",
-          })}
-        >
-          Profile
-        </NavLink>
-      </li> : ""
-      }
-      {
-        user ? <li>
-        <NavLink
-          to="/updateProfile"
-          style={({ isActive }) => ({
-            color: isActive ? "#fff" : "",
-            background: isActive ? "#7600dc" : "",
-          })}
-        >
-          UpdateProfile
-        </NavLink>
-      </li> : ""
-      }
-
+      {user ? (
+        <li>
+          <NavLink
+            to="/profile"
+            style={({ isActive }) => ({
+              color: isActive ? "#fff" : "",
+              background: isActive ? "#7600dc" : "",
+            })}
+          >
+            Profile
+          </NavLink>
+        </li>
+      ) : (
+        ""
+      )}
+      {user ? (
+        <li>
+          <NavLink
+            to="/updateProfile"
+            style={({ isActive }) => ({
+              color: isActive ? "#fff" : "",
+              background: isActive ? "#7600dc" : "",
+            })}
+          >
+            UpdateProfile
+          </NavLink>
+        </li>
+      ) : (
+        ""
+      )}
     </>
   );
   return (
-    <div className="navbar bg-base-100  container mx-auto">
+    <div
+      data-aos="zoom-out-down"
+      data-aos-duration="2000"
+      className="navbar bg-base-100  container mx-auto"
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

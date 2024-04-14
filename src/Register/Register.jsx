@@ -1,14 +1,19 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import PageTitle from "../PageTitle/PageTitle";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Register = () => {
   const {registerUser,  updateProfileInfo} = useContext(AuthContext);
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const handleRegister = async (e) => {
 
@@ -42,7 +47,8 @@ const Register = () => {
   };
 
   return (
-    <div>
+    <div data-aos="fade-up"
+    data-aos-duration="3000">
           <form
      onSubmit={handleRegister}
       className=" md:w-3/4 lg:w-1/2 border rounded-2xl p-4 mx-auto my-10"

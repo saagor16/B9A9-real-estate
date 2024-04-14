@@ -1,12 +1,17 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import PageTitle from "../PageTitle/PageTitle";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Login = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const { signIn, googleLogin, githubLogin } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
@@ -42,7 +47,8 @@ const Login = () => {
 
 
   return (
-    <div  className="md:w-3/4 lg:w-1/2 border rounded-2xl p-2 mx-auto my-10">
+    <div data-aos="fade-up"
+    data-aos-duration="3000"  className="md:w-3/4 lg:w-1/2 border rounded-2xl p-2 mx-auto my-10">
       <PageTitle title="Login"></PageTitle>
       <form
         onSubmit={handleLogin}>
