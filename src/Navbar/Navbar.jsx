@@ -34,6 +34,17 @@ const Navbar = () => {
           About Us
         </NavLink>
       </li>
+      <li className="mr-2">
+        <NavLink
+          to="/updateProfile"
+          style={({ isActive }) => ({
+            color: isActive ? "#fff" : "",
+            background: isActive ? "#7600dc" : "",
+          })}
+        >
+         Update Profile
+        </NavLink>
+      </li>
       {
         user ? <li>
         <NavLink
