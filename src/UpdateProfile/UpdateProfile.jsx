@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../providers/AuthProvider";
+import PageTitle from "../PageTitle/PageTitle";
 
 const UpdateProfile = () => {
     const { user, updateProfileInfo } = useContext(AuthContext);
@@ -26,6 +27,7 @@ const UpdateProfile = () => {
 
     return (
         <div className="border-2 border-violet-700 rounded-xl mt-5 lg:mt-10 p-5 lg:p-10 w-full lg:w-96 mx-auto">
+            <PageTitle title="UpdateProfile"></PageTitle>
             <form className="flex gap-5 flex-col justify-center items-center" onSubmit={handleUpdateProfile}>
                 <h1 className="font-bold text-4xl underline text-primary">My Profile</h1>
                 <div>

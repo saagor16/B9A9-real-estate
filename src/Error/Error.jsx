@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import PageTitle from "../PageTitle/PageTitle";
 
 const Error = () => {
   return (
     <div>
+      <PageTitle title="Error"></PageTitle>
       <section className="flex items-center h-full lg:h-[720px] sm:p-16 bg-gray-300 text-black mt-20">
         <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8 space-y-8 text-center sm:max-w-md">
           <svg

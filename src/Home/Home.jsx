@@ -1,9 +1,11 @@
+import PageTitle from "../PageTitle/PageTitle";
 import Banner from "./Banner";
 import Card from "./Card";
 
 const Home = () => {
     return (
         <div>
+            <PageTitle title="Home"></PageTitle>
             <div className="mt-10">
                 <Banner></Banner>
             </div>

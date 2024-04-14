@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import PageTitle from "../PageTitle/PageTitle";
 
 const Login = () => {
   const { signIn, googleLogin, githubLogin } = useContext(AuthContext);
@@ -42,6 +43,7 @@ const Login = () => {
 
   return (
     <div  className="md:w-3/4 lg:w-1/2 border rounded-2xl p-2 mx-auto my-10">
+      <PageTitle title="Login"></PageTitle>
       <form
         onSubmit={handleLogin}>
         <p className="text-3xl text-center mb-4 font-bold text-primary underline">

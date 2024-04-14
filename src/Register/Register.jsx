@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import PageTitle from "../PageTitle/PageTitle";
 
 const Register = () => {
   const {registerUser,  updateProfileInfo} = useContext(AuthContext);
@@ -46,7 +47,7 @@ const Register = () => {
      onSubmit={handleRegister}
       className=" md:w-3/4 lg:w-1/2 border rounded-2xl p-4 mx-auto my-10"
     >
-       {/* <PageTitle title="pPortal-register"></PageTitle> */}
+       <PageTitle title="Register"></PageTitle>
       <p className="text-3xl text-center mb-4 font-bold text-primary underline">
         Please Register
       </p>
