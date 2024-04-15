@@ -1,0 +1,147 @@
+ [
+    {
+      "id": 1,
+      "estate_title": "Cozy Cafe",
+      "segment_name": "Commercial",
+      "description": "A charming cafe perfect for intimate gatherings and casual dining.",
+      "price": "$5,000/month",
+      "status": "rent",
+      "area": "1500 sq ft",
+      "location": "Downtown",
+      "facilities": ["seating area", "espresso bar", "outdoor patio"],
+      "image": "cozy_cafe_image.jpg",
+      "other_info": {
+        "rating": 4.5,
+        "opening_hours": "Mon-Sun: 8am-10pm"
+      }
+    },
+    {
+      "id": 2,
+      "estate_title": "Gourmet Bistro",
+      "segment_name": "Commercial",
+      "description": "An upscale bistro offering gourmet cuisine in a sophisticated atmosphere.",
+      "price": "$8,500/month",
+      "status": "rent",
+      "area": "2500 sq ft",
+      "location": "City Center",
+      "facilities": ["fine dining area", "wine cellar", "private dining rooms"],
+      "image": "gourmet_bistro_image.jpg",
+      "other_info": {
+        "rating": 4.8,
+        "chef": "Michelin-starred chef John Smith"
+      }
+    },
+    {
+      "id": 3,
+      "estate_title": "Family Restaurant",
+      "segment_name": "Commercial",
+      "description": "A welcoming family restaurant serving homestyle dishes and kid-friendly meals.",
+      "price": "$4,200/month",
+      "status": "rent",
+      "area": "1800 sq ft",
+      "location": "Suburbia",
+      "facilities": ["play area", "family booths", "party room"],
+      "image": "family_restaurant_image.jpg",
+      "other_info": {
+        "kids_menu": true,
+        "special_events": "Birthday parties, family gatherings"
+      }
+    },
+    {
+      "id": 4,
+      "estate_title": "Rooftop Bar & Grill",
+      "segment_name": "Commercial",
+      "description": "An elevated dining experience with stunning views and delicious barbecue.",
+      "price": "$6,800/month",
+      "status": "rent",
+      "area": "2000 sq ft",
+      "location": "Skyline District",
+      "facilities": ["rooftop terrace", "grill station", "cocktail bar"],
+      "image": "rooftop_bar_image.jpg",
+      "other_info": {
+        "view": "Panoramic city skyline",
+        "happy_hour": "Mon-Fri: 4pm-7pm"
+      }
+    },
+    {
+      "id": 5,
+      "estate_title": "Urban Diner",
+      "segment_name": "Commercial",
+      "description": "A trendy diner serving comfort food classics with a modern twist.",
+      "price": "$4,500/month",
+      "status": "rent",
+      "area": "1600 sq ft",
+      "location": "Arts District",
+      "facilities": ["retro decor", "jukebox", "patio seating"],
+      "image": "urban_diner_image.jpg",
+      "other_info": {
+        "specials": "Live music on weekends",
+        "vibe": "Retro-chic ambiance"
+      }
+    },
+    {
+      "id": 6,
+      "estate_title": "Seafood Shack",
+      "segment_name": "Commercial",
+      "description": "A laid-back seafood joint serving fresh catches and beachside vibes.",
+      "price": "$3,800/month",
+      "status": "rent",
+      "area": "1200 sq ft",
+      "location": "Coastal District",
+      "facilities": ["picnic tables", "raw bar", "seafood market"],
+      "image": "seafood_shack_image.jpg",
+      "other_info": {
+        "catch_of_the_day": "Freshly caught local fish",
+        "seafood_market": "Buy fresh seafood to take home"
+      }
+    },
+    {
+      "id": 7,
+      "estate_title": "Pizzeria",
+      "segment_name": "Commercial",
+      "description": "A casual pizzeria serving authentic wood-fired pizzas and Italian specialties.",
+      "price": "$3,200/month",
+      "status": "rent",
+      "area": "1400 sq ft",
+      "location": "Old Town",
+      "facilities": ["wood-fired oven", "pizza bar", "outdoor seating"],
+      "image": "pizzeria_image.jpg",
+      "other_info": {
+        "signature_dish": "Margherita Pizza",
+        "weekly_deal": "Two-for-one pizza on Tuesdays"
+      }
+    },
+    {
+      "id": 8,
+      "estate_title": "Asian Fusion Bistro",
+      "segment_name": "Commercial",
+      "description": "An eclectic bistro blending Asian flavors with international influences.",
+      "price": "$6,000/month",
+      "status": "rent",
+      "area": "2200 sq ft",
+      "location": "Chinatown",
+      "facilities": ["sushi bar", "private dining area", "lounge"],
+      "image": "asian_fusion_bistro_image.jpg",
+      "other_info": {
+        "fusion_cuisine": "Japanese, Thai, Chinese, and more",
+        "live_entertainment": "Weekend DJ sets"
+      }
+    },
+    {
+      "id": 9,
+      "estate_title": "Cocktail Lounge",
+      "segment_name": "Commercial",
+      "description": "A sophisticated lounge specializing in craft cocktails and small plates.",
+      "price": "$7,500/month",
+      "status": "rent",
+      "area": "1800 sq ft",
+      "location": "Financial District",
+      "facilities": ["mixology bar", "lounge seating", "VIP area"],
+      "image": "cocktail_lounge_image.jpg",
+      "other_info": {
+        "signature_cocktail": "Old Fashioned",
+        "mixology_classes": "Learn to craft your own cocktails"
+      }
+    }
+  ]
+

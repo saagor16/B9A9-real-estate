@@ -1,54 +1,59 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Root from './Root/Root';
-import Home from './Home/Home';
-import Error from './Error/Error';
-import Login from './Login/Login';
-import Register from './Register/Register';
-import AuthProvider from './providers/AuthProvider';
-import { ToastContainer } from 'react-toastify';
-import UpdateProfile from './UpdateProfile/UpdateProfile';
-import Profile from './UserProfile/Profile';
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Root from "./Root/Root";
+import Home from "./Home/Home";
+import Error from "./Error/Error";
+import Login from "./Login/Login";
+import Register from "./Register/Register";
+import AuthProvider from "./providers/AuthProvider";
+import { ToastContainer } from "react-toastify";
+import UpdateProfile from "./UpdateProfile/UpdateProfile";
+import Profile from "./UserProfile/Profile";
+import Single from "./Single/Single";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
     errorElement: <Error></Error>,
-    children:[
+    children: [
       {
-        path : '/',
-        element:<Home></Home>
-      }, {
-        path: '/login',
-        element: <Login></Login>
+        path: "/",
+        element: <Home></Home>,
       },
       {
-        path: '/register',
-        element: <Register></Register>
-      }, 
+        path: "/single/:id",
+        element:<Single></Single>,
+        loader:() =>
+        (fetch('../data.json')),
+      },
       {
-        path: '/updateProfile',
-        element: <UpdateProfile></UpdateProfile>
-      }, 
+        path: "/login",
+        element: <Login></Login>,
+      },
       {
-        path: '/profile',
-        element: <Profile></Profile>
-      }, 
-    ]
+        path: "/register",
+        element: <Register></Register>,
+      },
+      {
+        path: "/updateProfile",
+        element: <UpdateProfile></UpdateProfile>,
+      },
+      {
+        path: "/profile",
+        element: <Profile></Profile>,
+      },
+    ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-      <AuthProvider>
+    <AuthProvider>
       <RouterProvider router={router} />
       <ToastContainer />
-      </AuthProvider>
-  </React.StrictMode>,
-)
+    </AuthProvider>
+  </React.StrictMode>
+);
