@@ -3,145 +3,128 @@
       "id": 1,
       "estate_title": "Cozy Cafe",
       "segment_name": "Commercial",
-      "description": "A charming cafe perfect for intimate gatherings and casual dining.",
+      "description": "A charming cafe perfect for intimate gatherings and casual dining.Nestled in the heart of Downtown, the Cozy Cafe exudes warmth and charm, beckoning patrons with its inviting atmosphere and delectable offerings. Spanning 1500 sq ft, this intimate cafe is the perfect retreat for those seeking a respite from the bustling city streets. Boasting an espresso bar, seating area, and an outdoor patio, it provides ample space for patrons to relax and unwind. Whether it's a leisurely brunch with friends or a quiet evening spent sipping coffee, the Cozy Cafe caters to all occasions. Operating from 8 am to 10 pm daily, it serves as a beacon of comfort and hospitality in the urban landscape.",
       "price": "$5,000/month",
       "status": "rent",
       "area": "1500 sq ft",
       "location": "Downtown",
       "facilities": ["seating area", "espresso bar", "outdoor patio"],
       "image": "cozy_cafe_image.jpg",
-      "other_info": {
-        "rating": 4.5,
-        "opening_hours": "Mon-Sun: 8am-10pm"
-      }
+      "rating": 4.5,
+      "opening_hours": "Mon-Sun: 8am-10pm"
     },
     {
       "id": 2,
       "estate_title": "Gourmet Bistro",
       "segment_name": "Commercial",
-      "description": "An upscale bistro offering gourmet cuisine in a sophisticated atmosphere.",
+      "description": "An upscale bistro offering gourmet cuisine in a sophisticated atmosphere.Tucked away in the bustling City Center, the Gourmet Bistro stands as a beacon of culinary excellence, offering discerning diners an unparalleled gastronomic experience. Spanning 2500 sq ft, this upscale establishment exudes sophistication and refinement at every turn. With a fine dining area, wine cellar, and private dining rooms, it sets the stage for memorable gatherings and intimate celebrations. Under the expert guidance of Michelin-starred chef John Smith, the Gourmet Bistro showcases the finest in gourmet cuisine, tantalizing taste buds with each meticulously crafted dish. From exquisite wine pairings to impeccable service, every aspect of the dining experience is curated to perfection.",
       "price": "$8,500/month",
       "status": "rent",
       "area": "2500 sq ft",
       "location": "City Center",
       "facilities": ["fine dining area", "wine cellar", "private dining rooms"],
       "image": "gourmet_bistro_image.jpg",
-      "other_info": {
-        "rating": 4.8,
-        "chef": "Michelin-starred chef John Smith"
-      }
+      "rating": 4.8,
+      "opening_hours": "Mon-Sun: 8am-10pm"
     },
     {
       "id": 3,
       "estate_title": "Family Restaurant",
       "segment_name": "Commercial",
-      "description": "A welcoming family restaurant serving homestyle dishes and kid-friendly meals.",
+      "description": "A welcoming family restaurant serving homestyle dishes and kid-friendly meals. Nestled in the tranquil suburbs, the Family Restaurant welcomes guests with open arms, offering a warm and inviting atmosphere that feels just like home. Spanning 1800 sq ft, this beloved establishment caters to families and friends alike, providing a cozy retreat for gatherings and celebrations. Complete with a play area, family booths, and a party room, it ensures that guests of all ages are well taken care of. From hearty homestyle dishes to kid-friendly meals, the Family Restaurant prides itself on serving up comfort food with a side of hospitality. With special events like birthday parties and family gatherings, it fosters a sense of community and belonging among its patrons.",
       "price": "$4,200/month",
       "status": "rent",
       "area": "1800 sq ft",
       "location": "Suburbia",
       "facilities": ["play area", "family booths", "party room"],
       "image": "family_restaurant_image.jpg",
-      "other_info": {
-        "kids_menu": true,
-        "special_events": "Birthday parties, family gatherings"
-      }
+      "rating": 4.5,
+        "opening_hours": "Mon-Sun: 8am-10pm"
     },
     {
       "id": 4,
       "estate_title": "Rooftop Bar & Grill",
       "segment_name": "Commercial",
-      "description": "An elevated dining experience with stunning views and delicious barbecue.",
+      "description": "An elevated dining experience with stunning views and delicious barbecue.Perched atop the majestic skyline district, the Rooftop Bar & Grill offers a dining experience unlike any other, boasting panoramic views and mouthwatering cuisine. Spanning 2000 sq ft, this elevated establishment combines stunning vistas with savory delights, creating an ambiance that is both breathtaking and unforgettable. With a rooftop terrace, grill station, and cocktail bar, it provides the perfect backdrop for intimate gatherings and lively celebrations alike. Whether it's savoring succulent barbecue or toasting to the city lights, guests are sure to be captivated by the Rooftop Bar & Grill's unparalleled charm and allure.",
       "price": "$6,800/month",
       "status": "rent",
       "area": "2000 sq ft",
       "location": "Skyline District",
       "facilities": ["rooftop terrace", "grill station", "cocktail bar"],
       "image": "rooftop_bar_image.jpg",
-      "other_info": {
-        "view": "Panoramic city skyline",
-        "happy_hour": "Mon-Fri: 4pm-7pm"
-      }
+      "rating": 4.9,
+      "opening_hours": "Mon-Fri: 4pm-7pm"
+      
     },
     {
       "id": 5,
       "estate_title": "Urban Diner",
       "segment_name": "Commercial",
-      "description": "A trendy diner serving comfort food classics with a modern twist.",
+      "description": "A trendy diner serving comfort food classics with a modern twist.Situated in the vibrant Arts District, the Urban Diner channels retro-chic vibes and modern flair, offering a dining experience that is as stylish as it is satisfying. Spanning 1600 sq ft, this trendy hotspot is adorned with retro decor and boasts a jukebox and patio seating, creating a nostalgic ambiance that harkens back to simpler times. From comfort food classics to innovative creations, the Urban Diner delights patrons with its eclectic menu and vibrant atmosphere. With live music performances on weekends, it serves as a gathering place for music lovers and food enthusiasts alike, fostering a sense of community and camaraderie in the heart of the city.",
       "price": "$4,500/month",
       "status": "rent",
       "area": "1600 sq ft",
       "location": "Arts District",
       "facilities": ["retro decor", "jukebox", "patio seating"],
       "image": "urban_diner_image.jpg",
-      "other_info": {
-        "specials": "Live music on weekends",
-        "vibe": "Retro-chic ambiance"
-      }
+      "rating": 4.2,
+      "opening_hours": "sun-Fri: 4pm-10pm"
     },
     {
       "id": 6,
       "estate_title": "Seafood Shack",
       "segment_name": "Commercial",
-      "description": "A laid-back seafood joint serving fresh catches and beachside vibes.",
+      "description": "A laid-back seafood joint serving fresh catches and beachside vibes. Embracing the laid-back vibes of the coastal district, the Seafood Shack invites guests to indulge in the freshest catches and beachside delights. Spanning 1200 sq ft, this casual eatery exudes a rustic charm, with picnic tables, a raw bar, and a seafood market adding to its coastal allure. Whether it's enjoying freshly caught local fish or browsing the market for the day's catch, patrons are treated to an authentic seaside experience that is as relaxed as it is rewarding. With its welcoming atmosphere and mouthwatering cuisine, the Seafood Shack captures the essence of coastal living, one bite at a time.",
       "price": "$3,800/month",
       "status": "rent",
       "area": "1200 sq ft",
       "location": "Coastal District",
       "facilities": ["picnic tables", "raw bar", "seafood market"],
       "image": "seafood_shack_image.jpg",
-      "other_info": {
-        "catch_of_the_day": "Freshly caught local fish",
-        "seafood_market": "Buy fresh seafood to take home"
-      }
+      "rating": 4.7,
+      "opening_hours": "Mon-sun: 7am-7pm"
     },
     {
       "id": 7,
       "estate_title": "Pizzeria",
       "segment_name": "Commercial",
-      "description": "A casual pizzeria serving authentic wood-fired pizzas and Italian specialties.",
+      "description": "A casual pizzeria serving authentic wood-fired pizzas and Italian specialties.Nestled in the historic streets of Old Town, the Pizzeria serves as a culinary landmark, offering authentic wood-fired pizzas and Italian specialties that have stood the test of time. Spanning 1400 sq ft, this cozy eatery exudes a rustic charm, with a wood-fired oven, pizza bar, and outdoor seating adding to its old-world allure. Known for its signature Margherita Pizza and weekly deals, it has become a favorite haunt for locals and tourists alike. Whether it's savoring a slice of pizza al fresco or enjoying a leisurely meal with friends, the Pizzeria offers a taste of Italy in the heart of the city.",
       "price": "$3,200/month",
       "status": "rent",
       "area": "1400 sq ft",
       "location": "Old Town",
       "facilities": ["wood-fired oven", "pizza bar", "outdoor seating"],
       "image": "pizzeria_image.jpg",
-      "other_info": {
-        "signature_dish": "Margherita Pizza",
-        "weekly_deal": "Two-for-one pizza on Tuesdays"
-      }
+      "rating": 4.9,
+      "opening_hours": "Mon-sat: 10pm-7am"
     },
     {
       "id": 8,
       "estate_title": "Asian Fusion Bistro",
       "segment_name": "Commercial",
-      "description": "An eclectic bistro blending Asian flavors with international influences.",
+      "description": "An eclectic bistro blending Asian flavors with international influences.Located in the vibrant Chinatown district, the Asian Fusion Bistro offers a culinary journey through the flavors of the East, blending Japanese, Thai, and Chinese cuisine with international influences. Spanning 2200 sq ft, this eclectic eatery boasts a sushi bar, private dining area, and lounge, creating a dynamic space that is as stylish as it is welcoming. With fusion cuisine and live entertainment, it caters to a diverse clientele, drawing food enthusiasts and music lovers alike. Whether it's sampling sushi rolls or grooving to the beat of a DJ set, guests are treated to an unforgettable dining experience that is as bold as it is flavorful.",
       "price": "$6,000/month",
       "status": "rent",
       "area": "2200 sq ft",
       "location": "Chinatown",
       "facilities": ["sushi bar", "private dining area", "lounge"],
       "image": "asian_fusion_bistro_image.jpg",
-      "other_info": {
-        "fusion_cuisine": "Japanese, Thai, Chinese, and more",
-        "live_entertainment": "Weekend DJ sets"
-      }
+      "rating": 4.4,
+      "opening_hours": "Mon-Fri: 4pm-7pm"
     },
     {
       "id": 9,
       "estate_title": "Cocktail Lounge",
       "segment_name": "Commercial",
-      "description": "A sophisticated lounge specializing in craft cocktails and small plates.",
+      "description": "A sophisticated lounge specializing in craft cocktails and small plates.Situated in the bustling Financial District, the Cocktail Lounge offers a sophisticated retreat for discerning patrons, serving up craft cocktails and small plates in a chic and stylish setting. Spanning 1800 sq ft, this elegant establishment boasts a mixology bar, lounge seating, and a VIP area, creating an ambiance that is both refined and relaxed. With its signature Old Fashioned cocktail and mixology classes, it provides guests with an opportunity to indulge in the art of cocktail crafting, while its upscale offerings and attentive service ensure that every visit is nothing short of extraordinary. Whether it's unwinding after a long day or celebrating a special occasion, the Cocktail Lounge sets the stage for memorable moments and lasting memories.",
       "price": "$7,500/month",
       "status": "rent",
       "area": "1800 sq ft",
       "location": "Financial District",
       "facilities": ["mixology bar", "lounge seating", "VIP area"],
       "image": "cocktail_lounge_image.jpg",
-      "other_info": {
-        "signature_cocktail": "Old Fashioned",
-        "mixology_classes": "Learn to craft your own cocktails"
-      }
+      "rating": 4.3,
+      "opening_hours": "Mon-Fri: 4pm-7pm"
     }
   ]
 
