@@ -7,19 +7,22 @@ const Single = () => {
   const card = single.find((card) => card.id == idInt);
 
   return (
-    <div className=" container mx-auto mt-10">
-      <div className="text-center">
-        <h2>View Details:{card.estate_title}</h2>
+    <div className=" container mx-auto mt-10 p-5">
+      <div className="text-center mb-8">
+        <h2 className="text-2xl font-bold ">View Details:<span className="text-2xl font-extrabold text-orange-500">{card.estate_title}</span></h2>
       </div>
-      <div className="border rounded-xl">
-        <section className="text-gray-700 body-font overflow-hidden bg-white">
-          <div className="container px-5 py-24 mx-auto">
-            <div className="lg:w-4/5 mx-auto flex flex-wrap">
-              <figure className="px-10 pt-10">
-                <img src={card.image} alt="Image" className="rounded-xl" />
-              </figure>
-              <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 space-y-4">
-                <h1 className="text-gray-900 text-4xl title-font font-bold mb-1">
+
+      <section className="bg-gray-200 text-gray-100 space-y-3 lg:h-[720px] w-full rounded-xl">
+        <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between space-y-8">
+          <div className="flex items-center justify-center lg:pt-32 lg:pl-16  h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+            <img
+              src={card.image}
+              alt=""
+              className="object-contain h-72 sm:h-80 lg:h-[720px] xl:h-112 2xl:h-128 rounded-xl"
+            />
+          </div>
+          <div className="flex flex-col space-y-5 lg:pr-24 lg:pl-16  rounded-sm  lg:text-left text-black">
+          <h1 className="text-gray-900 text-4xl title-font font-bold mb-1">
                   {card.estate_title}
                 </h1>
                 <div className=" flex gap-8">
@@ -40,15 +43,13 @@ const Single = () => {
                 </div>
 
                 <p className="leading-relaxed">Details : {card.description}</p>
-              </div>
-              <div className="flex gap-10 pt-5">
-                <p>Open:{card.opening_hours}</p>
-                <p>Rating:{card.rating}</p>
-              </div>
-            </div>
+                <div className="flex gap-10 pt-5">
+                  <p>Open:{card.opening_hours}</p>
+                  <p>Rating:{card.rating}</p>
+                </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
   );
 };

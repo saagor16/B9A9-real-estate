@@ -7,6 +7,8 @@ import "aos/dist/aos.css";
 
 const Home = () => {
   const [book, setBook] = useState([]);
+
+
   useEffect(() => {
     AOS.init();
     fetch("./data.json")
@@ -14,9 +16,9 @@ const Home = () => {
       .then((data) => setBook(data));
   }, []);
   return (
-    <div>
+    <div  className="mt-10 container mx-auto ">
       <PageTitle title="Home"></PageTitle>
-      <div  className="mt-10 container mx-auto ">
+      <div>
         <Banner></Banner>
       </div>
       <div className="container mx-auto mt-10 ">

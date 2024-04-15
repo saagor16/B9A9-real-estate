@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import { toast } from "react-toastify";
@@ -7,9 +7,12 @@ import "react-toastify/dist/ReactToastify.css";
 import PageTitle from "../PageTitle/PageTitle";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
   const {registerUser,  updateProfileInfo} = useContext(AuthContext);
+
+  const [password, showPassword] = useState(false);
 
   useEffect(() => {
     AOS.init();
@@ -97,13 +100,22 @@ const Register = () => {
         <label className="label">
           <span className="label-text">Password</span>
         </label>
-        <input
-          type="password"
-          name="password"
-          placeholder="password"
-          className="input input-bordered"
-          required
-        />
+        <div className="mb-4 relative border">
+            <input
+              className="w-full py-2 px-4"
+              type={password ? "text" : "password"}
+              name="password"
+              placeholder="Password"
+              id=""
+              required
+            />
+            <span
+              className="absolute top-3 right-2"
+              onClick={() => showPassword(!password)}
+            >
+              {password ? <FaEyeSlash></FaEyeSlash>:<FaEye></FaEye>}
+            </span>
+          </div>
         <label className="label">
           <a href="#" className="label-text-alt link link-hover">
             Forgot password?

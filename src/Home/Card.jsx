@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 /* eslint-disable react/prop-types */
 const Card = ({ card }) => {
   return (
-    <div className="mt-10">
-      <div className="card w-96 bg-base-100 shadow-xl space-y-5">
+    <div className="mt-10 ">
+      <div className="card w-96 h-full bg-base-100 shadow-xl space-y-5">
         <figure className="px-10 pt-10">
           <img
             src={card.image}
