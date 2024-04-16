@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import Card from "./Card";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import GiftCard from "./GiftCard";
 
 const Home = () => {
   const [book, setBook] = useState([]);
@@ -34,6 +35,9 @@ const Home = () => {
         {book.map((card) => (
             <Card key={card.id} card={card}></Card>
           ))}
+        </div>
+        <div className="mt-10">
+          <GiftCard></GiftCard>
         </div>
       </div>
     </div>
