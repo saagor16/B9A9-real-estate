@@ -30,7 +30,7 @@ const Home = () => {
         >
           <h4 className="text-5xl font-extrabold text-center">card</h4>
         </div>
-        <div data-aos="fade-down" className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 mx-auto">
+        <div data-aos="fade-down" className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 mx-auto p-3 container lg:ml-10">
         {book.map((card) => (
             <Card key={card.id} card={card}></Card>
           ))}

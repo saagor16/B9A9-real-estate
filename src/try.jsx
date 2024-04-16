@@ -1,11 +1,13 @@
-import { useContext,  useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
-
+import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Navbar = () => {
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const { user, logOut } = useContext(AuthContext);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -72,8 +74,12 @@ const Navbar = () => {
   );
 
   return (
-    <div className="container mx-auto">
-      <div  className="navbar bg-base-100 ">
+    <div className="relative">
+      <div
+        data-aos="zoom-out-down"
+        data-aos-duration="2000"
+        className="navbar bg-base-100 container mx-auto"
+      >
         <div className="navbar-start">
           <div className="dropdown lg:hidden">
             <div
@@ -103,12 +109,12 @@ const Navbar = () => {
               </ul>
             )}
           </div>
-          <Link
-            to={"/"}
-            className="btn btn-ghost text-lg md:text-2xl lg:text-3xl font-extrabold  bg-clip-text animate-gradient text-green-400"
-          >
-            realProperty
-          </Link>
+          <a href="/">
+            {" "}
+            <span className="text-lg md:text-2xl lg:text-3xl font-extrabold bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient bg-500%">
+              realProperty
+            </span>
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
