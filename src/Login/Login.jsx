@@ -30,7 +30,7 @@ const Login = () => {
       console.log(result.user);
     } catch (error) {
       console.error(error);
-      toast.error("Invalid email or password"); // Show toast notification for login failure
+      toast.error("Invalid email or password");
     }
   };
   const handleSocialLogin = (provider) => {

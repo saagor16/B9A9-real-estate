@@ -107,7 +107,7 @@ const Navbar = () => {
             to={"/"}
             className="btn btn-ghost text-lg md:text-2xl lg:text-3xl font-extrabold  bg-clip-text animate-gradient text-green-400"
           >
-            realProperty
+            RealResort
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

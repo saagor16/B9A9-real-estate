@@ -13,6 +13,7 @@ import { ToastContainer } from "react-toastify";
 import UpdateProfile from "./UpdateProfile/UpdateProfile";
 import Profile from "./UserProfile/Profile";
 import Single from "./Single/Single";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/single/:id",
-        element:<Single></Single>,
+        element:<PrivateRoute><Single></Single></PrivateRoute>,
         loader:() =>
         (fetch('../data.json')),
       },

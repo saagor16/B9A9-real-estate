@@ -1,4 +1,5 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
+import Marquee from "react-fast-marquee";
 
 const Single = () => {
   const single = useLoaderData();
@@ -8,16 +9,20 @@ const Single = () => {
 
   return (
     <div className=" container mx-auto mt-10 p-5">
-      <div className="text-center mb-8">
-        <h2 className="text-2xl font-bold ">
-          View Details:
-          <span className="text-2xl font-extrabold text-orange-500">
-            {card.estate_title}
-          </span>
-        </h2>
+      <div>
+      <div className="flex">
+            <button className="btn btn-secondary">View Details:</button>
+            <Marquee pauseOnHover={true} speed={40}>
+                <Link className="mr-12 lg:mr-24 text-orange-500 text-2xl font-extrabold" to="/">{card.estate_title}</Link>
+                <Link className="mr-12 lg:mr-24 text-orange-500 text-2xl font-extrabold" to="/">{card.estate_title}</Link>
+                <Link className="mr-12 lg:mr-24 text-orange-500 text-2xl font-extrabold" to="/">{card.estate_title}</Link>
+                <Link className="mr-12 lg:mr-24 text-orange-500 text-2xl font-extrabold" to="/">{card.estate_title}</Link>
+               
+            </Marquee>
+        </div>
       </div>
 
-      <section className="bg-gray-200 text-gray-100 space-y-3 lg:h-[720px] w-full rounded-xl">
+      <section className="bg-gray-200 text-gray-100 space-y-3 lg:h-[720px] w-full rounded-xl mt-10">
         <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between space-y-8">
           <div className="flex items-center justify-center lg:pt-32 lg:pl-16  h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
             <img
