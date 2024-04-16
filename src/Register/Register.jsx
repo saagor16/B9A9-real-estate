@@ -54,10 +54,10 @@ const Register = () => {
     data-aos-duration="3000">
           <form
      onSubmit={handleRegister}
-      className=" md:w-3/4 lg:w-1/2 border rounded-2xl p-4 mx-auto my-10"
+      className="bg-lime-100 md:w-3/4 lg:w-[720px] border rounded-2xl p-4 mx-auto my-10"
     >
        <PageTitle title="Register"></PageTitle>
-      <p className="text-3xl text-center mb-4 font-bold text-primary underline">
+      <p className="text-3xl text-center mb-4 font-bold text-orange-500 underline">
         Please Register
       </p>
       <div className="form-control">
@@ -123,11 +123,11 @@ const Register = () => {
         </label>
       </div>
       <div className="form-control mt-6">
-        <button className="btn btn-primary">Register</button>
+        <button className="btn btn-secondary hover:btn-ghost">Register</button>
       </div>
       <p>
         Do not have an account ? please 
-        <Link className="text-primary underline text-center font-semibold" to="/login">  Login
+        <Link className="text-orange-500 underline text-center font-semibold" to="/login">  Login
         </Link>
       </p>
     </form>
