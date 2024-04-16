@@ -7,6 +7,8 @@ import "aos/dist/aos.css";
 import GiftCard from "./GiftCard";
 import Every from "./Every";
 import Photo from "./Photo";
+import First from "./First";
+import Last from "./Last";
 
 const Home = () => {
   const [book, setBook] = useState([]);
@@ -49,6 +51,12 @@ const Home = () => {
         </div>
         <div className="mt-10">
           <Photo></Photo>
+        </div>
+        <div className="mt-10">
+          <First></First>
+        </div>
+        <div className="mt-10">
+          <Last></Last>
         </div>
       </div>
     </div>
