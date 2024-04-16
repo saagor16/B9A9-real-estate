@@ -5,6 +5,8 @@ import Card from "./Card";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import GiftCard from "./GiftCard";
+import Every from "./Every";
+import Photo from "./Photo";
 
 const Home = () => {
   const [book, setBook] = useState([]);
@@ -29,15 +31,24 @@ const Home = () => {
           data-aos-duration="2000"
           className=" mt-10"
         >
-          <h4 className="text-5xl font-extrabold text-center">card</h4>
+        <div className="text-center">
+        <h4 className="text-5xl font-extrabold text-lime-600">Welcome to Paradise: Our RealResort</h4>
+          <p className="mt-10">In popular tourist destinations or peak seasons, rental prices are typically higher due to increased demand. <br /> On the other hand, off-peak seasons or less popular destinations may offer lower rental rates.</p>
         </div>
-        <div data-aos="fade-down" className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 mx-auto p-3 container lg:ml-10">
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 mx-auto p-3 container lg:ml-10">
         {book.map((card) => (
             <Card key={card.id} card={card}></Card>
           ))}
         </div>
         <div className="mt-10">
+          <Every></Every>
+        </div>
+        <div className="mt-10">
           <GiftCard></GiftCard>
+        </div>
+        <div className="mt-10">
+          <Photo></Photo>
         </div>
       </div>
     </div>
