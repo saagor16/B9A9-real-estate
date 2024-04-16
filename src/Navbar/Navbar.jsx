@@ -39,7 +39,29 @@ const Navbar = () => {
             background: isActive ? "#7600dc" : "",
           })}
         >
-          About Us
+          About
+        </NavLink>
+      </li>
+      <li className="mr-2">
+        <NavLink
+          to="/contact"
+          style={({ isActive }) => ({
+            color: isActive ? "#fff" : "",
+            background: isActive ? "#7600dc" : "",
+          })}
+        >
+          Contact
+        </NavLink>
+      </li>
+      <li className="mr-2">
+        <NavLink
+          to="/review"
+          style={({ isActive }) => ({
+            color: isActive ? "#fff" : "",
+            background: isActive ? "#7600dc" : "",
+          })}
+        >
+          Review
         </NavLink>
       </li>
       {user && (

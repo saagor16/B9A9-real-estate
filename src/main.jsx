@@ -14,6 +14,9 @@ import UpdateProfile from "./UpdateProfile/UpdateProfile";
 import Profile from "./UserProfile/Profile";
 import Single from "./Single/Single";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import About from "./About/About";
+import Contact from "./Contact/Contact";
+import Review from "./Review/Review";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +26,18 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/about",
+        element:<About></About>,
+      },
+      {
+        path: "/contact",
+        element:<Contact></Contact>,
+      },
+      {
+        path: "/review",
+        element:<Review></Review>,
       },
       {
         path: "/single/:id",
