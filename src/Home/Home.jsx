@@ -64,6 +64,7 @@ const Home = () => {
         <div className="mt-10">
           <Last></Last>
         </div>
+        
       </div>
     </div>
   );

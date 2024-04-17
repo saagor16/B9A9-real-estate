@@ -1,9 +1,10 @@
+import 'animate.css';
 const About = () => {
   return (
     <div className="container mx-auto">
       <div className="sm:flex items-center max-w-screen-xl">
         <div className="sm:w-1/2 p-10">
-          <div className="image object-center text-center">
+          <div className="image object-center text-center animate__animated animate__fadeInLeft">
             <figure>
               <img
                 src="https://i.imgur.com/WbQnbas.png"
@@ -14,14 +15,14 @@ const About = () => {
           </div>
         </div>
         <div className="sm:w-1/2 p-5">
-          <div className="text">
+          <div className="text  ">
             <span className="text-gray-500 border-b-2 border-indigo-600 uppercase">
               About us
             </span>
-            <h2 className="my-4 font-bold text-3xl  sm:text-4xl ">
+            <h2 className="my-4 font-bold text-3xl animate__animated animate__bounce  sm:text-4xl ">
               About <span className="text-indigo-600">Our RealResort</span>
             </h2>
-            <p className="text-gray-700">
+            <p className="text-gray-700 animate__animated animate__fadeInRight">
               Welcome to Our RealResort, an exquisite haven where luxury meets
               nature in perfect harmony. Nestled along the sun-kissed shores of
               an idyllic island, Our RealResort invites you to indulge in
