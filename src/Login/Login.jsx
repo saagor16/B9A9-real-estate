@@ -13,7 +13,7 @@ const Login = () => {
   useEffect(() => {
     AOS.init();
   }, []);
-  const { signIn, googleLogin, githubLogin } = useContext(AuthContext);
+  const { LogIn, googleLogin, githubLogin } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const [password, showPassword] = useState(false);
@@ -26,9 +26,8 @@ const Login = () => {
     console.log(email, password);
 
     try {
-      const result = await signIn(email, password);
+      const result = await LogIn(email, password);
       console.log(result.user);
-      toast.success("match email or password");
     } catch (error) {
       console.error(error);
       toast.error("Invalid email or password");
