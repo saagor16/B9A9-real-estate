@@ -1,12 +1,14 @@
 import PageTitle from "../PageTitle/PageTitle";
-
-
+import Slider from "./Slider";
 
 const Review = () => {
-    return (
-        <div className="mx-auto container">
-          <PageTitle title="Review"></PageTitle>
-            <div className="mt-10 text-center ">
+  return (
+    <div className="mx-auto container">
+      <PageTitle title="Review"></PageTitle>
+      <div>
+        <Slider></Slider>
+      </div>
+      <div className="mt-10 md:mt-64 lg:mt-10 text-center ">
         <h2 className="text-3xl font-extrabold">Review</h2>
         <div className="flex flex-col w-full p-8 shadow-sm rounded-xl lg:p-12 bg-gray-300 text-black mt-10">
           <div className="flex flex-col items-center">
@@ -72,8 +74,8 @@ const Review = () => {
           </div>
         </div>
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Review;
