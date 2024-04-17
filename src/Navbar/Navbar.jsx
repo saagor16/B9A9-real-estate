@@ -94,8 +94,8 @@ const Navbar = () => {
   );
 
   return (
-    <div className="container mx-auto">
-      <div  className="navbar bg-base-100 ">
+    <div className="lg:m-3 m-2">
+      <div  className="navbar bg-cyan-200 rounded-xl ">
         <div className="navbar-start">
           <div className="dropdown lg:hidden">
             <div
@@ -127,7 +127,7 @@ const Navbar = () => {
           </div>
           <Link
             to={"/"}
-            className="btn btn-ghost text-lg md:text-2xl lg:text-3xl font-extrabold  bg-clip-text animate-gradient text-green-400"
+            className="btn btn-ghost text-lg md:text-2xl lg:text-3xl font-extrabold  bg-clip-text animate-gradient text-green-600"
           >
             RealResort
           </Link>
