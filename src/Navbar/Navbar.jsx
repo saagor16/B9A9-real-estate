@@ -64,9 +64,7 @@ const Navbar = () => {
           Review
         </NavLink>
       </li>
-      {user && (
-        <>
-          <li>
+      <li>
             <NavLink
               to="/profile"
               style={({ isActive }) => ({
@@ -77,6 +75,8 @@ const Navbar = () => {
               Profile
             </NavLink>
           </li>
+      {user && (
+        <>
           <li>
             <NavLink
               to="/updateProfile"
@@ -94,7 +94,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="container mx-auto p-2">
+    <div className="container mx-auto">
       <div  className="navbar bg-base-100 ">
         <div className="navbar-start">
           <div className="dropdown lg:hidden">
