@@ -1,14 +1,22 @@
+import { useEffect } from "react";
 import PageTitle from "../PageTitle/PageTitle";
 import Slider from "./Slider";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Review = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="mx-auto container">
       <PageTitle title="Review"></PageTitle>
-      <div>
+      <div data-aos="fade-up"
+      data-aos-duration="3000">
         <Slider></Slider>
       </div>
-      <div className="mt-10 md:mt-64 lg:mt-10 text-center ">
+      <div data-aos="fade-down"
+      data-aos-duration="3000" className="mt-10 md:mt-64 lg:mt-10 text-center ">
         <h2 className="text-3xl font-extrabold">Review</h2>
         <div className="flex flex-col w-full p-8 shadow-sm rounded-xl lg:p-12 bg-gray-300 text-black mt-10">
           <div className="flex flex-col items-center">
