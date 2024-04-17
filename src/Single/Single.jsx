@@ -1,5 +1,7 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import Marquee from "react-fast-marquee";
+import PageTitle from "../PageTitle/PageTitle";
+
 
 const Single = () => {
   const single = useLoaderData();
@@ -9,6 +11,7 @@ const Single = () => {
 
   return (
     <div className=" container mx-auto mt-10 p-5">
+      <PageTitle title="card-details"></PageTitle>
       <div>
       <div className="flex">
             <button className="btn btn-secondary">View Details:</button>
