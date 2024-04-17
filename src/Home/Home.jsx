@@ -13,7 +13,6 @@ import Last from "./Last";
 const Home = () => {
   const [book, setBook] = useState([]);
 
-
   useEffect(() => {
     AOS.init();
     fetch("./data.json")
@@ -21,25 +20,32 @@ const Home = () => {
       .then((data) => setBook(data));
   }, []);
   return (
-    <div  className="mt-10 container mx-auto ">
+    <div className="mt-10 container mx-auto ">
       <PageTitle title="Home"></PageTitle>
-      <div>
+      <div className="p-3">
         <Banner></Banner>
       </div>
-      <div className="container mx-auto mt-10 ">
+      <div className="">
         <div
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
           className=" mt-10"
         >
-        <div className="text-center">
-        <h4 className="text-5xl font-extrabold text-lime-600">Welcome to Paradise: Our RealResort</h4>
-          <p className="mt-10">In popular tourist destinations or peak seasons, rental prices are typically higher due to increased demand. <br /> On the other hand, off-peak seasons or less popular destinations may offer lower rental rates.</p>
+          <div className="text-center p-3">
+            <h4 className="lg:text-5xl text-xl font-extrabold text-lime-600">
+              Welcome to Paradise: Our RealResort
+            </h4>
+            <p className="lg:mt-10 mt-3 p-5">
+              In popular tourist destinations or peak seasons, rental prices are
+              typically higher due to increased demand. <br /> On the other
+              hand, off-peak seasons or less popular destinations may offer
+              lower rental rates.
+            </p>
+          </div>
         </div>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 mx-auto p-3 container lg:ml-10">
-        {book.map((card) => (
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 mx-auto container lg:ml-10">
+          {book.map((card) => (
             <Card key={card.id} card={card}></Card>
           ))}
         </div>

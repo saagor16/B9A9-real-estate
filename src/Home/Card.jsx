@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Card = ({ card }) => {
   return (
     <div className="mt-10">
-      <div className="card w-96 h-full  shadow-xl space-y-5 bg-gray-200">
+      <div className="card lg:w-96 h-full  shadow-xl space-y-5 bg-gray-200">
         <figure className="px-10 pt-10">
           <img
             src={card.image}

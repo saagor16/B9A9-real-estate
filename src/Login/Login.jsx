@@ -28,6 +28,7 @@ const Login = () => {
     try {
       const result = await signIn(email, password);
       console.log(result.user);
+      toast.success("match email or password");
     } catch (error) {
       console.error(error);
       toast.error("Invalid email or password");

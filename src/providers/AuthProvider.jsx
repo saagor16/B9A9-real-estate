@@ -46,16 +46,18 @@ const AuthProvider = ({ children }) => {
 
 
 
+ 
+ 
+
+  const LogIn = (email, password) =>{
+    return signInWithEmailAndPassword(auth, email , password)
+  };
   const logOut = () => {
     return signOut(auth);
   }
   const userProfile = () => {
     return signOut(auth);
   }
-
-  const LogIn = (email, password) =>{
-    return signInWithEmailAndPassword(auth, email , password)
-  };
 
 
   useEffect(() => {
