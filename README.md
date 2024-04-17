@@ -1,8 +1,13 @@
-# React + Vite
+# Real Estate Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Site URL:** [Real Estate Portal]()
 
-Currently, two official plugins are available:
+## Features and Characteristics:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Authentication**: Secure login and registration system for users.
+- **Property Listings**: Browse through a wide range of real estate properties.
+- **Advanced Search**: Filter properties based on location, price, amenities, and more.
+- **Favorites**: Save favorite properties for easy access later.
+- **Responsive Design**: Ensures seamless experience across various devices.
+
+**npm Package Name:** [package-name]()

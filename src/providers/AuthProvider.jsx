@@ -28,22 +28,22 @@ const AuthProvider = ({ children }) => {
   };
 
   const googleLogin = () => {
-    setIsLoading(false); 
+
     return signInWithPopup(auth, googleProvider);
   };
 
   const githubLogin = () => {
-    setIsLoading(false); 
+
     return signInWithPopup(auth, githubProvider);
   };
 
   const LogIn = (email, password) => {
-    setIsLoading(false); 
+   
     return signInWithEmailAndPassword(auth, email, password);
   };
 
   const logOut = () => {
-    setIsLoading(false); 
+  
     return signOut(auth);
 
   };
@@ -60,7 +60,7 @@ const AuthProvider = ({ children }) => {
 
   const authInfo = {
     user,
-    isLoading, // Pass isLoading state to the context
+    isLoading,
     registerUser,
     updateProfileInfo,
     googleLogin,
