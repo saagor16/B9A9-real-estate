@@ -16,14 +16,14 @@ The Real Estate Portal is a comprehensive web application designed to facilitate
 
 ## npm Packages Used
 
-- **[AOS](https://www.npmjs.com/package/aos):** Adds smooth animations to various elements as they scroll into view.
-- **[Animate.css](https://animate.style/):** Provides pre-defined CSS animations for a visually appealing interface.
-- **[Tailwind CSS](https://tailwindcss.com/):** Utility-first CSS framework for rapid UI development.
-- **[Daisy UI](https://daisyui.com/):** Tailwind CSS component library for building responsive and customizable user interfaces.
-- **[React Helmet](https://www.npmjs.com/package/react-helmet):** Manages the document head for setting meta tags dynamically.
-- **[React Toast](https://react-toast.com/):** Displays notifications and alerts to the users.
-- **[Mamba UI](https://mambaui.com/components):** Offers ready-to-use Tailwind CSS components for efficient design.
-- **[SwiperJS](https://swiperjs.com/):** Implements modern touch sliders and carousels.
+- **[AOS](https://www.npmjs.com/package/aos):** Scroll animations.
+- **[Animate.css](https://animate.style/):** CSS animations.
+- **[Tailwind CSS](https://tailwindcss.com/):** Utility-first CSS framework.
+- **[Daisy UI](https://daisyui.com/):** Tailwind CSS components.
+- **[React Helmet](https://www.npmjs.com/package/react-helmet):** Manage document head.
+- **[React Toast](https://react-toast.com/):** Notifications.
+- **[Mamba UI](https://mambaui.com/components):** Tailwind components.
+- **[SwiperJS](https://swiperjs.com/):** Touch sliders.
 
 ## Key Functionalities
 
